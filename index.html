@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netbeans Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .table-container {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    table {
+      border-collapse: collapse;
+      margin: 5px;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+    .vertical-line {
+      border-left: 1px solid black;
+      height: 20px;
+      margin: 0 auto;
+    }
+    .horizontal-line {
+      border-top: 1px solid black;
+      width: 20px;
+      display: inline-block;
+    }
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="tab-container">
+    <h1>Project</h1>
+    <div class="tab-buttons">
+      <button class="tab-button active" data-tab="main">Main</button>
+      <button class="tab-button" data-tab="login">Login</button>
+      <button class="tab-button" data-tab="persona1">Persona 1</button>
+      <button class="tab-button" data-tab="persona2">Persona 2</button>
+      <button class="tab-button" data-tab="scenario1">Scenario 1</button>
+      <button class="tab-button" data-tab="scenario2">Scenario 2</button>
+      <button class="tab-button" data-tab="storyboard">Storyboard</button>
+      <button class="tab-button" data-tab="moodboard">Moodboard</button>
+      <button class="tab-button" data-tab="flowchart">Flowchart</button>
+      <button class="tab-button" data-tab="wireframe">Wireframe</button>
+      <button class="tab-button" data-tab="preferences">Preferences</button>
+      <button class="tab-button" data-tab="help">Help</button>
+    </div>
+    <div class="tab-content">
+      <div class="tab-pane active" id="main">
+        <h2>Main Functionalities</h2>
+        <p>This project provides the following main information:</p>
+        <ul>
+          <li>Task Management: Create, assign, and track tasks for your projects.</li>
+          <li>Time Tracking: Log the hours spent on tasks and manage your time effectively.</li>
+          <li>Collaboration: Share files, communicate with team members, and collaborate in real-time.</li>
+          <li>Reporting: Make detailed reports on project progress and performance.</li>
+          <li>Integration: Integrate with other tools and services for better workflow management.</li>
+          <li>Customizable Dashboard: Personalize your dashboard to see the most important information at a glance.</li>
+        </ul>
+      </div>
+      <div class="tab-pane hidden" id="login">
+        <h2>Login</h2>
+        <form id="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username"><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password"><br><br>
+          <input type="submit" value="Login">
+        </form>
+      </div>
+      <div class="tab-pane hidden" id="persona1">
+        <h2>Persona 1</h2>
+        <div class="persona-container">
+          <img src="images/Screenshot_4.jpg" alt="Persona 1 Image" class="persona-image">
+          <div class="persona-details">
+            <h3>Name: Sarah Johnson</h3>
+            <p><strong>Age:</strong> 34</p>
+            <p><strong>Occupation:</strong> Marketing Manager</p>
+            <p><strong>Goals:</strong> Improve team collaboration, increase productivity</p>
+            <p><strong>Frustrations:</strong> Inefficient tools, lack of integration</p>
+            <p><strong>Behaviors:</strong> Uses multiple devices, prefers cloud-based solutions</p>
+            <p><strong>Motivations:</strong> Achieve career growth, maintain work-life balance</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane hidden" id="persona2">
+        <h2>Persona 2</h2>
+        <div class="persona-container">
+          <img src="images/Screenshot_5.jpg" alt="Persona 2 Image" class="persona-image">
+          <div class="persona-details">
+            <h3>Name: Michael Brown</h3>
+            <p><strong>Age:</strong> 28</p>
+            <p><strong>Occupation:</strong> Software Developer</p>
+            <p><strong>Goals:</strong> Build efficient, scalable applications</p>
+            <p><strong>Frustrations:</strong> Debugging issues, unclear requirements</p>
+            <p><strong>Behaviors:</strong> Works late hours, prefers detailed documentation</p>
+            <p><strong>Motivations:</strong> Solve complex problems, gain recognition</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane hidden" id="scenario1">
+        <h2>Scenario 1</h2>
+        <p>Sarah needs to organize a marketing campaign with her team. She wants to use a tool that allows her to assign tasks, share files, and track progress seamlessly.</p>
+        <ul>
+          <li><strong>Situation:</strong> Planning a new product launch</li>
+          <li><strong>Task:</strong> Create and manage a marketing campaign</li>
+          <li><strong>Action:</strong> Sarah logs into the project management tool, assigns tasks to her team members, and shares important files.</li>
+          <li><strong>Result:</strong> The team collaborates effectively, and the campaign is launched successfully on time.</li>
+        </ul>
+      </div>
+      <div class="tab-pane hidden" id="scenario2">
+        <h2>Scenario 2</h2>
+        <p>Michael is tasked with developing a new feature for an application. He needs to collaborate with the design team and ensure the feature is implemented according to the specifications.</p>
+        <ul>
+          <li><strong>Situation:</strong> Adding a new feature to an existing application</li>
+          <li><strong>Task:</strong> Develop and integrate the new feature</li>
+          <li><strong>Action:</strong> Michael reviews the design documents, writes the code, and tests the feature thoroughly.</li>
+          <li><strong>Result:</strong> The new feature is successfully integrated, and the application runs smoothly with the added functionality.</li>
+        </ul>
+      </div>
+      <div class="tab-pane hidden" id="storyboard">
+        <h2>Storyboard</h2>
+        <div class="storyboard-container">
+          <div class="storyboard-frame">
+            <img src="images/Screenshot_7.jpg" alt="Storyboard Frame 1" class="storyboard-image">
+            <p>Frame 1: Sarah logs into the project management tool.</p>
+          </div>
+          <div class="storyboard-frame">
+            <img src="images/Screenshot_8.jpg" alt="Storyboard Frame 2" class="storyboard-image">
+            <p>Frame 2: She assigns tasks to her team members.</p>
+          </div>
+          <div class="storyboard-frame">
+            <img src="images/Screenshot_9.jpg" alt="Storyboard Frame 3" class="storyboard-image">
+            <p>Frame 3: The team collaborates and shares files.</p>
+          </div>
+          <div class="storyboard-frame">
+            <img src="images/Screenshot_10.jpg" alt="Storyboard Frame 4" class="storyboard-image">
+            <p>Frame 4: The campaign is successfully launched.</p>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane hidden" id="moodboard">
+        <h2>Moodboard</h2>
+        <div class="moodboard-container">
+          <img src="images/Screenshot_3.jpg" alt="Moodboard Large Image" class="moodboard-large-image">
+        </div>
+      </div>
+<div class="tab-pane hidden" id="flowchart">
+        <h2>Flowchart</h2>
+        <div class="flowchart-container">
+          <div class="flowchart-table">
+            <h3>Persona</h3>
+            <table>
+              <tr><td>Goals</td></tr>
+              <tr><td>Frustrations</td></tr>
+              <tr><td>Behaviors</td></tr>
+              <tr><td>Motivations</td></tr>
+              <tr><td>Image</td></tr>
+            </table>
+          </div>
+          <div class="flowchart-line"></div>
+          <div class="flowchart-shape">-- ></div>
+          <div class="flowchart-line"></div>
+          <div class="flowchart-table">
+            <h3>Scenario</h3>
+            <table>
+              <tr><td>Situation</td></tr>
+              <tr><td>Task</td></tr>
+              <tr><td>Action</td></tr>
+              <tr><td>Result</td></tr>
+              <tr><td>Image</td></tr>
+            </table>
+          </div>
+          <div class="flowchart-line"></div>
+          <div class="flowchart-shape">-- ></div>
+          <div class="flowchart-line"></div>
+          <div class="flowchart-table">
+            <h3>Storyboard</h3>
+            <table>
+              <tr><td>Frame 1</td></tr>
+              <tr><td>Frame 2</td></tr>
+              <tr><td>Frame 3</td></tr>
+              <tr><td>Frame 4</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane hidden" id="wireframe">
+        <h2>Wireframe</h2>
+        <div class="wireframe-container">
+          <img src="images/Screenshot_17.jpg" alt="Wireframe Image" class="wireframe-image">
+        </div>
+      </div>
+      <div class="tab-pane hidden" id="preferences">
+        <h2>User Preferences</h2>
+        <form id="preferences-form">
+          <label for="theme">Theme:</label>
+          <select id="theme" name="theme">
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select><br><br>
+          <label for="notifications">Notifications:</label>
+          <input type="checkbox" id="notifications" name="notifications" checked><br><br>
+          <input type="submit" value="Save Preferences">
+        </form>
+      </div>
+      <div class="tab-pane hidden" id="help">
+        <h2>Help</h2>
+        <p>Welcome to the help section. Here you can find answers to common questions and get support for using the project management tool.</p>
+        <ul>
+          <li><strong>The purpose of this project:</strong> Navigate to the 'Main' tab and get to know the main functionalities.</li>
+          <li><strong>Collaboration Tools:</strong> Explore how to communicate effectively with team members across the "Personas" and "Storyboard" tabs.</li>
+          <li><strong>Task Management:</strong> Discover how to assign and perform tasks effectively across the "Scenarios" tabs.</li>
+          <li><strong>Customization:</strong> Find out how to personalize your experience in the "Preferences" tab.</li>
+          <li><strong>Contact support:</strong> If you need further assistance, please contact the support team at nsuno001@fiu.edu</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-top: 20px;
+  color: #333;
+}
+
+h3 {
+  font-size: 1.5em;
+  color: #555;
+}
+
+p, li {
+  font-size: 1em;
+  color: #666;
+}
+
+.tab-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; /* Center the container */
+}
+
+.tab-buttons {
+  display: flex;
+  justify-content: center; /* Center the tabs */
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.tab-button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+  margin: 0 5px; /* Add margin between buttons */
+}
+
+.tab-button.active, .tab-button:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.tab-content {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.persona-container, .storyboard-container, .moodboard-container, .flowchart-container, .wireframe-container {
+  text-align: center;
+}
+
+.persona-image, .storyboard-image, .moodboard-large-image, .flowchart-image, .wireframe-image {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+}
+
+.storyboard-frame {
+  display: inline-block;
+  margin: 10px;
+}
+
+.flowchart-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flowchart-table {
+  border: 2px solid #3498db;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #ecf0f1;
+  text-align: center;
+  width: 120px;
+}
+
+.flowchart-table h3 {
+  margin: 5px 0;
+  font-size: 1.2em;
+  color: #2c3e50;
+}
+
+.flowchart-table table {
+  margin: 10px auto;
+}
+
+.flowchart-shape {
+  width: 50px;
+  height: 50px;
+  background-color: #e74c3c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.flowchart-line {
+  width: 120px;
+  height: 2px;
+  background-color: #9b59b6;
+  margin: 0 auto;
+}
+
+.moodboard-large-image {
+  width: 100%;
+  max-width: 600px;
+}
+
+.wireframe-image {
+  width: 100%;
+  max-width: 600px;
+}
+
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.login-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
